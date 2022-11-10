@@ -6,12 +6,12 @@ import { addOrder, deleteOrder, getAllOrders, getSingleOrder, updateOrder } from
 
 const router = express.Router();
 
-router.route('',cors(corsOptions))
+router.route('')
 .get(getAllOrders)
 .post(addOrder)
 
 
-router.route('/:id', cors(corsOptions))
+router.route('/:id' )
 .get(getSingleOrder)
 .put(updateOrder)
 .delete(deleteOrder)

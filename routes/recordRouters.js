@@ -14,12 +14,12 @@ import { validateARecord } from "../middleware/recordValidation.js";
 const router = express.Router();
 
 router
-  .route("/records", cors(corsOptions))
+  .route("/records")
   .get(getRecords)
   .post(validateARecord, addRecord);
 
 router
-  .route("/records/:id", cors(corsOptions))
+  .route("/records/:id")
   .get(getOneRecord)
   .put(updateRecord)
   .delete(deleteRecord);

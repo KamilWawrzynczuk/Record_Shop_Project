@@ -5,12 +5,12 @@ import { addUser, deleteUser, getAllUsers, getSingleUser, updateUser } from '../
 
 const router = express.Router();
 
-router.route('',cors(corsOptions))
+router.route('')
 .get(getAllUsers)
 .post(addUser)
 
 
-router.route('/:email', cors(corsOptions))
+router.route('/:email')
 .get(getSingleUser)
 .put(updateUser)
 .delete(deleteUser)
