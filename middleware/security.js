@@ -3,7 +3,7 @@
 // var app = express()
 
 export var corsOptions = {
-  origin: "http://localhost:5001",
+ // origin: "http://localhost:5001",
   optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
 };
 
