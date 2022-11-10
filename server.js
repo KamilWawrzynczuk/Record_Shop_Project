@@ -2,6 +2,7 @@ import express, { response } from "express";
 import recordsRouter from "./routes/recordRouters.js";
 import usersRouter from "./routes/usersRouter.js";
 import ordersRouter from "./routes/ordersRouters.js";
+import cors from 'cors';
 const app = express();
 const port = process.env.PORT || 5001;
 
